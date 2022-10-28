@@ -1,0 +1,160 @@
+
+
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+body{
+    background-color:rgb(213 213 213);
+    font-family: 'Roboto', sans-serif;
+}
+
+                                 /* nav bar */
+.nav{
+    background-color: black;
+    opacity:0.9;
+}
+.nav ul{
+     display: flex;
+     align-items: center;
+}
+.nav ul li{
+    list-style: none;
+    color:rgb(178, 167, 167);
+    padding:10px 10px;
+    cursor:pointer;
+}
+.nav ul li:hover{
+    color:white;
+    font-size: 1.4rem;
+}
+
+/* logo */
+#brand{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+#brand p{
+    color:white;
+    font-size:1.8rem;
+    padding:0 6px;
+}
+
+#logo{
+    height:3.0rem;
+    width:3.0rem;
+}
+                          /* mid */
+
+.mid{
+    height:100vh;
+    background-color: black;
+    color:white;
+    width:70%;
+    display: flex;
+    margin: 0 auto;
+    margin-top:30px;
+    background: url('logo/bg.jpg')  center  center/cover;
+    padding:27px;
+    opacity: 0.9;
+}
+/* song lists */
+.songlist h1:hover{
+color:rgb(184, 172, 172);
+}
+.songs img{
+    height:30px;
+    width:30px;
+    border-radius: 20px;
+}
+.songs{
+    margin-top:12px;
+    width:100%;
+    height:7%;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(243, 245, 248);
+    color:black;
+    border-radius: 30px;
+    
+}
+.songs:hover{
+    background-color:rgb(19, 19, 21);
+    color:white;
+}
+.songs span{
+    padding:0 10px;
+}
+.time i{
+    cursor:pointer;
+    padding:0 4px;
+    font-size: 20px;
+}
+.time i:hover{
+    color:rgb(6, 249, 6);
+}
+
+                           /* bottom */
+.bottom{
+background-color: black;
+height:15vh;
+position:sticky;
+bottom:0;
+display: flex;
+flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.86;
+}
+#slider{
+    width:80%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.playbutton i{  cursor:pointer;
+    color:white;}
+.playbutton i:hover{color:rgb(10, 240, 10);}
+    .gif{
+        margin-top:10px;
+        position:absolute;
+        left:10%;
+    }
+   .gif img{
+    width: 46px;
+    height: 9px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    }
+    #songbottomname{
+        color:white;
+        padding:0 10px;
+    }
+
+    @media screen and (max-width:800px){
+  
+    .songs{
+        margin-top:12px;
+        height:8%;
+        padding: 0px 5px;
+        font-size:10px;
+    }
+    .songs span{
+        padding:0 4px;
+    }
+    .time i{
+        font-size: 15px;
+    }
+
+    /* play/pause button */
+    .playbutton i{ 
+        margin-top:15px;
+        font-size: 25px;
+        }
+        .gif{
+            bottom:50px;
+            font-size:10px;
+        }
+    }
